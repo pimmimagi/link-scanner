@@ -10,7 +10,7 @@ def get_links(url: str):
               without page fragments or query parameters.
     """
     driver = webdriver.Chrome(
-        "/Users/sirapopkunjiak/Desktop/ISP/link-scanner-SIrapopKunjiak/chromedriver")
+        "/Users/sarochasit/Desktop/ISP/link-scanner/chromedriver")
     driver.get(url)
     list_url = []
     all_elems = driver.find_element_by_xpath("//a[@href]")
